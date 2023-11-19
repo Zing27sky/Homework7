@@ -56,15 +56,13 @@ public class Main {
         //Задача 6
         System.out.println("Задача 6");
         int sum = 15000;
-        int accumulation = 0;
         int year = 9;
         int monthsInYear = 12;
         int finalMonth = monthsInYear * year;
         for (int months = 1; months <= finalMonth; months++) {
-            accumulation = accumulation + accumulation / 100 * 7;
-            accumulation = accumulation + sum;
+            sum = sum + (int) (sum * 0.07);
             if (months % 6 == 0)
-                System.out.println("Месяц " + months + " сумма накоплений " + accumulation);
+                System.out.println("Месяц " + months + " сумма накоплений " + sum);
         }
         //Задача 7
         System.out.println("Задача 7");
